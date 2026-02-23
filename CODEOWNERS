@@ -1,0 +1,8 @@
+# Default reviewers
+*                       @shepard-system/maintainers
+
+# Knowledge content
+/docs/                  @shepard-system/docs-team
+
+# CI/CD — owner only
+/.github/workflows/     @digitalashes
