@@ -1,0 +1,13 @@
+filters:
+  and:
+    - file.inFolder("20_Statute/rules")
+views:
+  - type: table
+    name: All Rules
+    order:
+      - file.name
+      - status
+      - priority
+      - risk
+      - scope
+      - updated

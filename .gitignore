@@ -1,0 +1,13 @@
+# Obsidian per-user state (shared config stays in git)
+.obsidian/workspace*.json
+.obsidian/cache
+.obsidian/plugins/
+.obsidian/themes/
+.trash/
+
+# Personal drafts never leave the machine
+01_Inbox/private/
+
+# Tooling
+.idea/
+.DS_Store

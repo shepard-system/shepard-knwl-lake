@@ -1,0 +1,12 @@
+filters:
+  and:
+    - file.inFolder("30_Skills")
+    - file.ext == "md"
+views:
+  - type: table
+    name: All Skills
+    order:
+      - file.name
+      - status
+      - version
+      - updated

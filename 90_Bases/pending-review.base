@@ -1,0 +1,11 @@
+filters:
+  and:
+    - status == "draft"
+views:
+  - type: table
+    name: Pending Review
+    order:
+      - file.name
+      - author
+      - file.folder
+      - updated

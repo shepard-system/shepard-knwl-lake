@@ -1,0 +1,10 @@
+# Lake identity. Read by the Memory Layer and MCP Hub; Obsidian ignores it.
+id: shepard                 # short, unique across your lakes; prefix for cross-lake refs (shepard:RULE-CORE-001)
+name: Shepard Main Lake
+role: main                  # main | member
+extends:                    # member only: git URL or local path of the main lake
+template_version: 0.1.0
+
+# Domain codes used in document IDs (RULE-{DOMAIN}-{NNN}).
+domains:
+  CORE: Framework-wide rules that apply to every lake

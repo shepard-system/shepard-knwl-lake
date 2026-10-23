@@ -1,0 +1,13 @@
+filters:
+  and:
+    - file.inFolder("70_Cases")
+    - status != "closed"
+views:
+  - type: table
+    name: Open Cases
+    order:
+      - file.name
+      - type
+      - severity
+      - status
+      - created
