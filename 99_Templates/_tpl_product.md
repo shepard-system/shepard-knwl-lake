@@ -30,8 +30,6 @@ Example: Billing, Platform, Spanish
 <!-- ASCII diagram or link to canvas -->
 ```
 
-See: [[architecture/]] for details.
-
 ---
 
 ## Components
@@ -41,8 +39,6 @@ See: [[architecture/]] for details.
 | Component | Description | Status |
 |-----------|-------------|--------|
 | | | 🟢 Active |
-
-See: [[components/]] for details.
 
 ---
 
@@ -80,10 +76,3 @@ Source → Ingestion → Processing → Storage → Consumption
 - Platform dependencies: 
 - Glossary: [[Glossary|Glossary]]
 
----
-
-## Changelog
-
-| Date | Change | Author |
-|------|--------|--------|
-| {{date}} | Created | |

@@ -45,7 +45,7 @@ STATUS: draft → experimental → active → deprecated
 |-----------|-------|
 | **Actor** | <!-- Human / Agent name --> |
 | **Action** | <!-- What to do --> |
-| **Rules** | <!-- [[RULE-XXX]] --> |
+| **Rules** | <!-- <!-- [[RULE-…]] --> --> |
 | **Tools** | <!-- MCP tools if agent --> |
 | **Output** | <!-- What is produced --> |
 
@@ -91,10 +91,3 @@ STATUS: draft → experimental → active → deprecated
 - Skills: 
 - Other workflows: 
 
----
-
-## Changelog
-
-| Date | Change | Author |
-|------|--------|--------|
-| {{date}} | Created | |

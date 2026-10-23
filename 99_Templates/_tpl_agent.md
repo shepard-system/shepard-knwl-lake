@@ -59,7 +59,7 @@ Rule: Agents without specs do not exist.
 
 | Skill | Purpose |
 |-------|---------|
-| [[SKILL-xxx]] | |
+| <!-- [[SKILL-…]] --> | |
 
 ---
 
@@ -67,7 +67,7 @@ Rule: Agents without specs do not exist.
 
 <!-- Rules this agent must follow -->
 
-- [[RULE-XXX]]
+- <!-- [[RULE-…]] -->
 - 
 
 ---
@@ -87,7 +87,7 @@ Rule: Agents without specs do not exist.
 
 | Workflow | Role in Workflow |
 |----------|------------------|
-| [[WFLOW-XXX]] | |
+| <!-- [[WFLOW-…]] --> | |
 
 ---
 
@@ -117,26 +117,9 @@ All actions must log:
 
 ---
 
-## Performance Metrics
-
-| Metric | Target |
-|--------|--------|
-| Success rate | |
-| Avg execution time | |
-| Escalation rate | |
-
----
-
 ## Related
 
 - Other agents: 
 - Skills: 
 - Policies: `shepard:POLICY-agent-access`
 
----
-
-## Changelog
-
-| Version | Date | Change | Author |
-|---------|------|--------|--------|
-| 0.1.0 | {{date}} | Created | |

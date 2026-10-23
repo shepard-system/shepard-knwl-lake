@@ -25,97 +25,38 @@ Add relevant component/ tag: component/<name>
 
 ## Responsibilities
 
-<!-- What is this component responsible for? -->
-
-- 
-- 
 - 
 
 ### NOT Responsible For
 
-<!-- What is explicitly out of scope? -->
-
 - 
-
----
-
-## Architecture
-
-<!-- How is this component structured? -->
-
-```
-<!-- ASCII diagram or description -->
-```
 
 ---
 
 ## Interfaces
 
-### Inputs
-
-| Source | Type | Description |
-|--------|------|-------------|
-| | | |
-
-### Outputs
-
-| Destination | Type | Description |
-|-------------|------|-------------|
-| | | |
-
-### APIs / Endpoints
-
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| | | |
+| Direction | Peer | Type | Description |
+|-----------|------|------|-------------|
+| in | | | |
+| out | | | |
 
 ---
 
 ## Dependencies
 
-### Depends On
-
-<!-- What does this component need to function? -->
-
-| Dependency | Type | Critical |
-|------------|------|----------|
-| | | Yes/No |
-
-### Depended On By
-
-<!-- What depends on this component? -->
-
-| Dependent | Type | Impact if Down |
-|-----------|------|----------------|
-| | | |
-
----
-
-## Configuration
-
-<!-- Key configuration options -->
-
-| Parameter | Default | Description |
-|-----------|---------|-------------|
-| | | |
+| Depends on | Critical | Impact if down |
+|------------|----------|----------------|
+| | Yes/No | |
 
 ---
 
 ## Operations
 
-### Health Checks
-
-- 
-
-### Common Issues
+<!-- Health checks, common issues, runbooks. -->
 
 | Issue | Symptoms | Resolution |
 |-------|----------|------------|
 | | | |
-
-### Runbooks
-
-- 
 
 ---
 
@@ -124,12 +65,3 @@ Add relevant component/ tag: component/<name>
 - Product: [[Context]]
 - Specs: 
 - Rules: 
-- Other components: 
-
----
-
-## Changelog
-
-| Date | Change | Author |
-|------|--------|--------|
-| {{date}} | Created | |

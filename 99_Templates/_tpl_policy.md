@@ -54,12 +54,12 @@ This is what must be followed.
 ### Rules
 
 <!-- Rules that enforce this policy -->
-- [[RULE-XXX]]
+- <!-- [[RULE-…]] -->
 
 ### Workflows
 
 <!-- Workflows that follow this policy -->
-- [[WFLOW-XXX]]
+- <!-- [[WFLOW-…]] -->
 
 ### Technical Controls
 
@@ -94,10 +94,3 @@ This is what must be followed.
 - Rules: 
 - Cases: 
 
----
-
-## Changelog
-
-| Date | Change | Author |
-|------|--------|--------|
-| {{date}} | Created | |

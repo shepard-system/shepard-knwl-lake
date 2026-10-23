@@ -2,6 +2,7 @@
 id: NOTE-{DOMAIN}-{NNN}
 tags: [nav/index]
 status: active
+created: {{date}}
 updated: {{date}}
 ---
 
@@ -18,7 +19,4 @@ updated: {{date}}
 
 ---
 
-## Related
-
-- Parent: [[Context]]
-- Section Hub: <!-- link to parent section hub file (e.g., Codex.md, Statute.md) -->
+**Up:** <!-- [[parent hub]], e.g. [[Context]] or [[Statute]] -->

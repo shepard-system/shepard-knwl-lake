@@ -3,7 +3,7 @@ id: NOTE-CORE-017
 tags: [type/convention]
 status: active
 created: 2026-01-22
-updated: 2026-10-23
+updated: 2026-10-24
 ---
 
 # Note Maturity
@@ -15,6 +15,8 @@ Applies primarily to `01_Inbox`. We use a gardening metaphor for knowledge growt
 | **Seedling** | `maturity/seedling` | 🌱 | **Raw Idea.** A quick capture, a question, or a snippet. Minimal structure. No guarantee of truth. |
 | **Sapling** | `maturity/sapling` | 🌿 | **Developing.** Structure is emerging. Links are being added. Content is being verified. |
 | **Evergreen** | `maturity/evergreen` | 🌳 | **Mature.** Complete, reviewed, and authoritative. Ready to be moved from Inbox to `Context` or `Statute`. |
+
+The tag is the only marker in a note — no `maturity:` field, no emoji in the title. Emojis are for this legend.
 
 ## Promotion Process
 

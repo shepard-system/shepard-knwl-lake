@@ -81,10 +81,3 @@ SCOPE: agent names or workflows that use this checklist
 - Workflows: 
 - Other checklists: 
 
----
-
-## Changelog
-
-| Date | Change | Author |
-|------|--------|--------|
-| {{date}} | Created | |

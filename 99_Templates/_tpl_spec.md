@@ -15,33 +15,21 @@ llm-ready: false
 # {{title}}
 
 <!-- 
-Specification = functional or non-functional requirements document.
-Links to tickets, PRDs, or other sources.
+Specification = functional or non-functional requirements.
+Link the ticket or PRD in `source`. Technical decisions go in ADRs.
 -->
 
 ## Overview
 
-<!-- What is being specified? Why? -->
-
----
-
-## Background
-
-<!-- Context and history. Why is this needed? -->
+<!-- What is being specified and why now? -->
 
 ---
 
 ## Goals
 
-<!-- What should be achieved? -->
-
-- [ ] 
-- [ ] 
 - [ ] 
 
 ### Non-Goals
-
-<!-- What is explicitly NOT in scope? -->
 
 - 
 
@@ -49,81 +37,36 @@ Links to tickets, PRDs, or other sources.
 
 ## Requirements
 
-### Functional Requirements
+### Functional
 
-| ID | Requirement | Priority | Status |
-|----|-------------|----------|--------|
-| FR-01 | | Must | Draft |
-| FR-02 | | Should | Draft |
-| FR-03 | | Could | Draft |
+| ID | Requirement | Priority |
+|----|-------------|----------|
+| FR-01 | | Must |
 
-### Non-Functional Requirements
+### Non-Functional
 
-| ID | Requirement | Metric | Target |
-|----|-------------|--------|--------|
-| NFR-01 | Performance | | |
-| NFR-02 | Availability | | |
-| NFR-03 | Security | | |
-
----
-
-## User Stories
-
-### Story 1: <!-- title -->
-
-**As a** <!-- role -->
-**I want** <!-- action -->
-**So that** <!-- benefit -->
-
-**Acceptance Criteria:**
-- [ ] 
-- [ ] 
+| ID | Requirement | Target |
+|----|-------------|--------|
+| NFR-01 | | |
 
 ---
 
 ## Technical Approach
 
-<!-- High-level technical approach. Details go in ADRs. -->
-
----
-
-## Dependencies
-
-<!-- External dependencies, blockers, prerequisites -->
-
-| Dependency | Type | Status | Owner |
-|------------|------|--------|-------|
-| | | | |
+<!-- High level only. Details go in ADRs. -->
 
 ---
 
 ## Risks
 
-| Risk | Impact | Probability | Mitigation |
-|------|--------|-------------|------------|
-| | High/Med/Low | High/Med/Low | |
-
----
-
-## Timeline
-
-| Milestone | Target Date | Status |
-|-----------|-------------|--------|
-| | | |
+| Risk | Mitigation |
+|------|------------|
+| | |
 
 ---
 
 ## Related
 
 - Product: [[Context]]
-- Ticket: 
 - ADRs: 
 - Components: 
-
----
-
-## Changelog
-
-| Date | Change | Author |
-|------|--------|--------|
-| {{date}} | Created | |

@@ -65,10 +65,3 @@ Must be atomic, unambiguous, actionable.
 - Cases: 
 - Workflows: 
 
----
-
-## Changelog
-
-| Date | Change | Author |
-|------|--------|--------|
-| {{date}} | Created | |

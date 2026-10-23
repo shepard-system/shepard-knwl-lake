@@ -17,119 +17,22 @@ superseded-by:
 # ADR: <!-- title -->
 
 <!-- 
-Architecture Decision Record
+Architecture Decision Record, Michael Nygard format.
 DOMAIN CODES: see `domains` in lake.yaml
-STATUS: draft → proposed → accepted → deprecated → superseded
+STATUS lives in frontmatter only:
+  draft = proposed · active = accepted · deprecated = deprecated or superseded (set superseded-by)
 -->
-
-## Status
-
-<!-- proposed | accepted | deprecated | superseded -->
-
-**Decision date:** <!-- YYYY-MM-DD -->
-**Deciders:** <!-- who made/approved this decision -->
-
----
 
 ## Context
 
-<!-- 
-What is the issue that we're seeing that is motivating this decision or change?
-What forces are at play (technical, business, political)?
--->
-
----
+<!-- What forces are at play? Why does a decision have to be made now? -->
 
 ## Decision
 
-<!-- 
-What is the change that we're proposing and/or doing?
-State the decision clearly and unambiguously.
--->
-
-**We will** <!-- decision -->
-
----
-
-## Rationale
-
-<!-- Why is this decision being made? What factors led to this choice? -->
-
----
-
-## Alternatives Considered
-
-### Option 1: <!-- name -->
-
-<!-- Description -->
-
-**Pros:**
-- 
-
-**Cons:**
-- 
-
-### Option 2: <!-- name -->
-
-<!-- Description -->
-
-**Pros:**
-- 
-
-**Cons:**
-- 
-
-### Option 3: <!-- name (chosen) -->
-
-<!-- Description -->
-
-**Pros:**
-- 
-
-**Cons:**
-- 
-
----
+We will <!-- the decision, stated plainly -->.
 
 ## Consequences
 
-### Positive
+<!-- What becomes easier, what becomes harder, what risks we accept. -->
 
-- 
-
-### Negative
-
-- 
-
-### Risks
-
-| Risk | Mitigation |
-|------|------------|
-| | |
-
----
-
-## Implementation
-
-<!-- How will this be implemented? Key steps, timeline, owners. -->
-
-- [ ] 
-- [ ] 
-
----
-
-## Related
-
-- Product: [[Context]]
-- Spec: 
-- Components affected: 
-- Rules created: 
-- Previous ADRs: 
-
----
-
-## Changelog
-
-| Date | Change | Author |
-|------|--------|--------|
-| {{date}} | Created | |
+**Up:** [[Context]]

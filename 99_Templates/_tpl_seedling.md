@@ -3,7 +3,6 @@ id: NOTE-{DOMAIN}-{NNN}
 tags:
   - type/note
   - maturity/seedling
-maturity: seedling 🌱
 status: draft
 created: {{date}}
 updated: {{date}}
@@ -12,17 +11,14 @@ aliases: []
 source:
 ---
 
-# 🌱 {{title}}
+# {{title}}
 
 <!-- 
 MATURITY LIFECYCLE:
 🌱 seedling → 🌿 sapling → 🌳 evergreen
 
-When updating maturity:
-1. Change frontmatter: maturity: seedling → sapling → evergreen
-2. Change tag: maturity/seedling → maturity/sapling → maturity/evergreen  
-3. Update emoji in title: 🌱 → 🌿 → 🌳
-4. When evergreen: move to target folder, convert to appropriate template
+The tag is the only marker: maturity/seedling → maturity/sapling → maturity/evergreen
+When evergreen: move to the target folder, convert to the right template.
 -->
 
 ## Idea

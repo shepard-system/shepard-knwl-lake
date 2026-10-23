@@ -137,10 +137,3 @@ STATUS: open | investigating | resolved | closed
 - Previous cases: 
 - Ticket: 
 
----
-
-## Changelog
-
-| Date | Change | Author |
-|------|--------|--------|
-| {{date}} | Created | |

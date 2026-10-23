@@ -59,7 +59,7 @@ STATUS: draft → experimental → active → deprecated
 
 <!-- Rules that this skill must follow -->
 
-- [[RULE-XXX]]
+- <!-- [[RULE-…]] -->
 - 
 
 ---
@@ -128,10 +128,3 @@ See: `tests/` subfolder (when created)
 - Other skills: 
 - Workflows: 
 
----
-
-## Changelog
-
-| Version | Date | Change | Author |
-|---------|------|--------|--------|
-| 0.1.0 | {{date}} | Created | |
