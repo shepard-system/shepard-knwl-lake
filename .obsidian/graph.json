@@ -1,7 +1,9 @@
 {
   "colorGroups": [
     {"query": "tag:#risk/critical", "color": {"a": 1, "rgb": 15684420}},
-    {"query": "path:00_Codex", "color": {"a": 1, "rgb": 7041664}},
+    {"query": "[status:deprecated]", "color": {"a": 1, "rgb": 7041664}},
+    {"query": "[status:draft] -path:99_Templates", "color": {"a": 1, "rgb": 15381256}},
+    {"query": "path:00_Codex", "color": {"a": 1, "rgb": 16347926}},
     {"query": "tag:#type/rule", "color": {"a": 1, "rgb": 3899126}},
     {"query": "tag:#type/skill", "color": {"a": 1, "rgb": 11036151}},
     {"query": "tag:#type/context", "color": {"a": 1, "rgb": 2278750}}
