@@ -23,6 +23,8 @@ HOME.md            # navigation root
 90_Bases/          # Obsidian Bases views
 99_Templates/      # document templates
 tools/check.py     # lake linter
+.ai/               # coding-agent instructions + skills (CLAUDE.md, AGENTS.md, GEMINI.md link here)
+.github/           # CODEOWNERS, CI (runs the linter)
 ```
 
 One rigid structure for every lake. Core Obsidian only — no community plugins.
@@ -30,27 +32,15 @@ One rigid structure for every lake. Core Obsidian only — no community plugins.
 ## Start a New Lake
 
 ```bash
-git clone https://github.com/shepard-system/shepard-knwl-lake.git lake-prog
-cd lake-prog
-rm -rf .git 20_Statute/rules/* 20_Statute/policies/*   # inherited rules stay in the main lake
-git init
+gh repo create <owner>/lake-prog --private --template shepard-system/shepard-knwl-lake --clone
 ```
 
-Edit `lake.yaml`:
+Or **Use this template** on GitHub. Then set `id`, `role: member`, `extends` and your domains in `lake.yaml`,
+remove the inherited `20_Statute/rules/*` and `policies/*`, and run `python3 tools/check.py`.
+Full steps: [`.ai/skills/new-lake`](.ai/skills/new-lake/SKILL.md) — readable by humans and agents alike.
 
-```yaml
-id: prog
-name: Programming & Sciences
-role: member
-extends: https://github.com/shepard-system/shepard-knwl-lake
-template_version: 0.1.0
-domains:
-  PY: Python
-```
-
-Push to your **private** repository, open the folder as an Obsidian vault, start at `HOME.md`.
-
-For a company, fork this repository as your own main lake (`role: main`) and point team lakes at it.
+Open the folder as an Obsidian vault and start at `HOME.md`.
+For a company, create your own main lake (`role: main`) the same way and point team lakes at it.
 
 ## How Lakes Work Together
 
@@ -72,7 +62,12 @@ Stdlib only, no dependencies.
 ## For AI Agents
 
 Read [`00_Codex/agent-instructions.md`](00_Codex/agent-instructions.md) first.
+`CLAUDE.md`, `AGENTS.md` and `GEMINI.md` point to [`.ai/AGENTS.md`](.ai/AGENTS.md), the entry point for coding CLIs.
 Agents write only to `01_Inbox/agents/`; everything else goes through a pull request.
+
+Skills for coding agents in [`.ai/skills/`](.ai/skills/) (Claude Code finds them via `.claude/skills`):
+`new-lake`, `write-note`, `link-lake`, `lake-hygiene`.
+Private, machine-local agent rules go in `.ai/AGENTS.local.md` — gitignored.
 
 ## License
 

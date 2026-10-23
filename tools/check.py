@@ -9,8 +9,8 @@ from pathlib import Path
 
 REQUIRED = ("id", "tags", "status", "created", "updated")
 STATUSES = {"draft", "experimental", "active", "deprecated", "open", "investigating", "resolved", "closed"}
-SKIP_DIRS = {".git", ".obsidian", ".trash", "private"}
-SKIP_FILES = {"README.md", "LICENSE"}
+SKIP_DIRS = {".git", ".github", ".obsidian", ".trash", ".ai", ".claude", "private"}
+SKIP_FILES = {"README.md", "LICENSE", "CLAUDE.md", "AGENTS.md", "GEMINI.md"}
 
 FM_RE = re.compile(r"\A---\n(.*?)\n---", re.S)
 KEY_RE = re.compile(r"^([\w-]+):[ \t]*(.*)$", re.M)

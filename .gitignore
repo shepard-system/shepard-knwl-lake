@@ -5,8 +5,9 @@
 .obsidian/themes/
 .trash/
 
-# Personal drafts never leave the machine
+# Personal drafts and private agent rules never leave the machine
 01_Inbox/private/
+.ai/*.local.md
 
 # Tooling
 .idea/
