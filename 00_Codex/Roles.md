@@ -180,4 +180,4 @@ All agent specs live in `30_Skills/agents/`:
 
 - [[Manifesto]] — why these roles exist
 - [[30_Skills/Skills|Skills]] — what agents can do
-- [[POLICY-agent-access|Agent Access Policy]]
+- `shepard:POLICY-agent-access` — agent access policy (main lake)

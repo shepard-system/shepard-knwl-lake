@@ -30,7 +30,7 @@ Operational directives for AI agents working with a lake.
 | `90_Bases/`, `99_Templates/` | read |
 
 Changes outside `01_Inbox/agents/` go through a git branch + pull request for a human to merge.
-See [[POLICY-agent-access]].
+See `shepard:POLICY-agent-access` (main lake).
 
 ## Writing Documents
 

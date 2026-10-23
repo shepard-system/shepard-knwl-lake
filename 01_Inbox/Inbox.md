@@ -13,7 +13,7 @@ updated: 2026-10-23
 | Folder | Who writes | In git |
 |--------|-----------|--------|
 | `shared/` | Humans | yes |
-| `agents/` | Agents only ([[POLICY-agent-access]]) | yes |
+| `agents/` | Agents only (`shepard:POLICY-agent-access`) | yes |
 | `private/` | You, personal drafts | **no** (gitignored) |
 
 New notes start from [[_tpl_seedling]] and grow 🌱 → 🌿 → 🌳 ([[Maturity]]).

@@ -131,7 +131,7 @@ All actions must log:
 
 - Other agents: 
 - Skills: 
-- Policies: [[POLICY-agent-access]]
+- Policies: `shepard:POLICY-agent-access`
 
 ---
 
