@@ -1,0 +1,10 @@
+# Default reviewers
+*                       @shepard-system/maintainers
+
+# Law and framework — the Architect approves
+/00_Codex/              @digitalashes
+/20_Statute/            @digitalashes
+/99_Templates/          @digitalashes
+
+# CI/CD — owner only
+/.github/               @digitalashes

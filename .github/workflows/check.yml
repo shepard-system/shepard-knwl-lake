@@ -1,0 +1,19 @@
+name: Check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  lake:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Lint lake
+        run: python3 tools/check.py
+      - name: No private files tracked
+        run: test -z "$(git ls-files 01_Inbox/private '*.local.md')"
