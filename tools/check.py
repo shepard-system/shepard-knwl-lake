@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Lake linter: required frontmatter, unique ids, dead wikilinks.
+"""Lake linter: lake.yaml identity, required frontmatter, unique ids, dead wikilinks.
 
 Usage: python3 tools/check.py [lake_root]   (exit 1 on any error)
 """
@@ -13,15 +13,30 @@ SKIP_DIRS = {".git", ".github", ".obsidian", ".trash", ".ai", ".claude", "privat
 SKIP_FILES = {"README.md", "LICENSE", "CLAUDE.md", "AGENTS.md", "GEMINI.md"}
 
 FM_RE = re.compile(r"\A---\n(.*?)\n---", re.S)
-KEY_RE = re.compile(r"^([\w-]+):[ \t]*(.*)$", re.M)
-CODE_RE = re.compile(r"```.*?```|`[^`\n]*`", re.S)
+KEY_RE = re.compile(r"^([\w-]+):[ \t]*(.*(?:\n[ \t]+-.*)*)", re.M)  # value or block list
+CODE_RE = re.compile(r"```.*?```|`[^`\n]*`|<!--.*?-->", re.S)  # code and placeholder comments
+LAKE_KEY_RE = re.compile(r"^(\w+):[ \t]*([^#\n]*)", re.M)
 LINK_RE = re.compile(r"\[\[([^\]|#\\]+)")
 
 
+def check_lake_yaml(root: Path) -> list[str]:
+    path = root / "lake.yaml"
+    if not path.is_file():
+        return ["lake.yaml: missing"]
+    meta = {k: v.strip() for k, v in LAKE_KEY_RE.findall(path.read_text(encoding="utf-8"))}
+    errors = [f"lake.yaml: missing '{k}'" for k in ("id", "role") if not meta.get(k)]
+    if meta.get("role") and meta["role"] not in ("main", "member"):
+        errors.append(f"lake.yaml: unknown role '{meta['role']}'")
+    if meta.get("role") == "member" and not meta.get("extends"):
+        errors.append("lake.yaml: member lake needs 'extends'")
+    return errors
+
+
 def check(root: Path) -> list[str]:
-    files = [p for p in root.rglob("*") if p.is_file() and not SKIP_DIRS & set(p.relative_to(root).parts)]
+    errors = check_lake_yaml(root)
+    files =[p for p in root.rglob("*") if p.is_file() and not SKIP_DIRS & set(p.relative_to(root).parts)]
     targets = {p.stem for p in files if p.suffix == ".md"} | {p.name for p in files}
-    errors, ids = [], {}
+    ids = {}
 
     for p in sorted(f for f in files if f.suffix == ".md" and f.name not in SKIP_FILES):
         rel = p.relative_to(root)

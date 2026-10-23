@@ -54,7 +54,7 @@ Details: [`00_Codex/Federation.md`](00_Codex/Federation.md).
 ## Check a Lake
 
 ```bash
-python3 tools/check.py        # required frontmatter, unique ids, dead links; exit 1 on errors
+python3 tools/check.py        # lake.yaml, required frontmatter, unique ids, dead links; exit 1 on errors
 ```
 
 Stdlib only, no dependencies.
